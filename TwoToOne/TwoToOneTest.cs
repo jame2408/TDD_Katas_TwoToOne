@@ -27,7 +27,7 @@ namespace TwoToOne
     {
         public static string Longest(string s1, string s2)
         {
-            return "a";
+            return s1 == s2 ? s1 : (s1 + s2);
         }
     }
 }
