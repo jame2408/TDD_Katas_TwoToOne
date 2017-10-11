@@ -1,9 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TwoToOne
 {
@@ -26,6 +23,24 @@ namespace TwoToOne
         public void Test_When_input_s1_is_b_and_s2_is_a_should_be_sort_to_ab()
         {
             Assert.AreEqual("ab", TwoToOneSolution.Longest("b", "a"));
+        }
+
+        [Test]
+        public void Test_When_input_s1_is_aretheyhere_and_s2_is_yestheyarehere_should_be_sort_to_aehrsty()
+        {
+            Assert.AreEqual("aehrsty", TwoToOneSolution.Longest("aretheyhere", "yestheyarehere"));
+        }
+
+        [Test]
+        public void Test_When_input_s1_is_loopingisfunbutdangerous_and_s2_is_lessdangerousthancoding_should_be_sort_to_abcdefghilnoprstu()
+        {
+            Assert.AreEqual("abcdefghilnoprstu", TwoToOneSolution.Longest("loopingisfunbutdangerous", "lessdangerousthancoding"));
+        }
+
+        [Test]
+        public void Test_When_input_s1_is_inmanylanguages_and_s2_is_theresapairoffunctions_should_be_sort_to_acefghilmnoprstuy()
+        {
+            Assert.AreEqual("acefghilmnoprstuy", TwoToOneSolution.Longest("inmanylanguages", "theresapairoffunctions"));
         }
     }
 
