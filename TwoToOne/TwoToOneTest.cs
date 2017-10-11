@@ -21,6 +21,12 @@ namespace TwoToOne
         {
             Assert.AreEqual("ab", TwoToOneSolution.Longest("a", "b"));
         }
+
+        [Test]
+        public void Test_When_input_s1_is_b_and_s2_is_a_should_be_sort_to_ab()
+        {
+            Assert.AreEqual("ab", TwoToOneSolution.Longest("b", "a"));
+        }
     }
 
     public static class TwoToOneSolution
